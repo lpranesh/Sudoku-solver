@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Sudoku Solver</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Sudoku Solver</h1>
+        <div id="sudoku-grid" class="sudoku-grid"></div>
+        <button onclick="solveSudoku()">Solve</button>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
